@@ -1,0 +1,25 @@
+
+.status-item::after {
+    content: "|";
+
+    margin: 0 2.5dvw;
+}
+
+.leftward-marquee {
+    display: inline-block;
+
+    animation-name: marquee-left;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes marquee-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

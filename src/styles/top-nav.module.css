@@ -11,7 +11,7 @@
 }
 
 .nav-link:last-child {
-    @apply text-2xl pl-3 pr-10;
+    @apply text-2xl pl-3 pr-8;
 }
 
 .nav-link:not(:last-child) {
@@ -37,10 +37,4 @@
     border: 1px solid var(--primary-accent-dim);
     top: 50%;
     transform: translateY(-50%);
-}
-
-.floating-link > * {
-    position: relative; 
-    top: 50%; 
-    transform: translateY(25%);
 }

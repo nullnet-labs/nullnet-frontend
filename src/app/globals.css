@@ -21,3 +21,12 @@ body {
     color: var(--bg-color);
     background-color: var(--primary-accent);
 }
+
+.bordered-link {
+    border: 1px solid var(--primary-accent-dim);
+}
+
+.bordered-link > * {
+    position: relative; 
+    top: 50%;
+}

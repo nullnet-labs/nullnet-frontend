@@ -19,8 +19,8 @@ export default function TopNav() {
             </div>
 
             <div className="absolute bottom-px right-px h-full pr-6 text-md">
-                <a href="/" className={classes('relative block px-6 hover-link', styles['floating-link'])}>
-                    <div>
+                <a href="/" className={classes('relative block px-6 hover-link bordered-link', styles['floating-link'])}>
+                    <div style={{ transform: 'translateY(12.5%)'}}>
                         Settings
                     </div>
                 </a>
