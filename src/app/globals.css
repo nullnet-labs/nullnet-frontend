@@ -3,10 +3,21 @@
 :root {
     --bg-color: black;
     --primary-accent: hsl(0, 0%, 85%);
+    --primary-accent-dim: hsl(from var(--primary-accent) h s l / 0.5);
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--primary-accent);
     font-family: monospace;
+}
+
+.hover-link {
+    background-color: var(--bg-color);
+    transition-duration: 0.2s;
+}
+
+.hover-link:hover {
+    color: var(--bg-color);
+    background-color: var(--primary-accent);
 }

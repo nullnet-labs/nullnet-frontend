@@ -1,0 +1,46 @@
+@reference "../app/globals.css";
+
+.lower-bordered-nav {
+    border-color: var(--primary-accent-dim);
+}
+
+.nav-link {
+    @apply relative inline-block py-3;
+
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--spacing) * 4) 100%, 0 100%);
+}
+
+.nav-link:last-child {
+    @apply text-2xl pl-3 pr-10;
+}
+
+.nav-link:not(:last-child) {
+    @apply text-lg pl-14 pr-10;
+
+    margin-left: calc(var(--spacing, .25rem) * -9);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150%;
+    width: 2px;
+    transform-origin: top right;
+    transform: rotate(16deg);
+    background-color: var(--primary-accent-dim);
+}
+
+.floating-link {
+    min-height: 50%;
+    border: 1px solid var(--primary-accent-dim);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.floating-link > * {
+    position: relative; 
+    top: 50%; 
+    transform: translateY(25%);
+}

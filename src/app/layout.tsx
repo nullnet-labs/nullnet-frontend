@@ -3,7 +3,6 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: {
-        // this template can be seen in action in ./dashboard/invoices/page.tsx
         template: '%s | Project Nullnet',
         default: 'Project Nullnet'
     },
