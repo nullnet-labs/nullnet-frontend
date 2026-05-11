@@ -2,6 +2,7 @@ import styles from '@/styles/home.module.css';
 import classes from '@/lib/css-class-list';
 import TopNav from '@/components/top-nav';
 import HeroSection from '@/components/hero-section';
+import SearchForm from '@/components/search-form';
 
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
         <>
             <TopNav />
             <HeroSection />
+            <SearchForm />
         </>
     );
 };

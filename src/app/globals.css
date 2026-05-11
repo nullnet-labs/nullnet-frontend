@@ -12,21 +12,30 @@ body {
     font-family: monospace;
 }
 
-.hover-link {
+.hover-btn {
     background-color: var(--bg-color);
     transition-duration: 0.2s;
 }
 
-.hover-link:hover {
+.hover-btn:hover {
     color: var(--bg-color);
     background-color: var(--primary-accent);
 }
 
-.bordered-link {
+.accent-bordered-btn {
+    border: 1px solid var(--primary-accent);
+}
+
+.accent-bordered-btn > * {
+    position: relative; 
+    top: 50%;
+}
+
+.dim-accent-bordered-btn {
     border: 1px solid var(--primary-accent-dim);
 }
 
-.bordered-link > * {
+.dim-accent-bordered-btn > * {
     position: relative; 
     top: 50%;
 }
