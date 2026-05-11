@@ -1,1 +1,46 @@
 @reference "../app/globals.css";
+
+.manila-tab {
+    clip-path: polygon(calc(var(--spacing) * 2) 0, calc(100% - var(--spacing) * 2) 0, 100% 100%, 0 100%);
+}
+
+.manila-tab::before,
+.manila-tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 150%;
+    width: 2px;
+    background-color: var(--primary-accent);
+}
+
+.manila-tab::before {
+    left: 1px;
+    transform-origin: bottom left;
+    transform: rotate(19deg);
+}
+
+.manila-tab::after {
+    right: 1px;
+    transform-origin: bottom right;
+    transform: rotate(-19deg);
+}
+
+.rightward-marquee {
+    display: inline-block;
+
+    animation-name: marquee-right;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes marquee-right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

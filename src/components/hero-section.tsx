@@ -17,7 +17,10 @@ export default function HeroSection() {
                 <h3 className="text-sm my-3 italic">
                     "Where did the rest of the Internet go?"
                 </h3>
-                <div className="border-y py-2 text-sm text-left whitespace-nowrap overflow-hidden" style={{borderColor: 'var(--primary-accent-dim)'}}>
+                <div
+                    className="border-y py-2 text-sm text-left whitespace-nowrap overflow-hidden"
+                    style={{ borderColor: 'var(--primary-accent-dim)' }}
+                >
                     <Repeat x={4}>
                         <span className={styles['leftward-marquee']}>
                             <span className={styles['status-item']}>
