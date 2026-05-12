@@ -1,0 +1,71 @@
+@reference "../app/globals.css";
+
+.preview-card {
+    width: calc(250px + 2 * var(--spacing));
+    height: 200px;
+}
+
+.preview-box {
+    position: relative;
+    z-index: 0;
+    width: calc(250px + 2 * var(--spacing));
+    max-height: 200px;
+    border: 1px outset var(--primary-accent);
+    transition: 200ms;
+}
+
+.preview-box > p {
+    flex-shrink: 0;
+}
+
+.shrink-wrapper {
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.shrink-wrapper > img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border: 1px outset var(--primary-accent);
+}
+
+.preview-box:hover {
+    box-shadow: 0 0 12px var(--primary-accent);
+}
+
+
+/* MANILA-FOLDER-STYLE TAB */ 
+header > .manila-tab {
+    position: relative;
+    z-index: 1;
+}
+
+.manila-tab {
+    clip-path: polygon(calc(var(--spacing) * 2) 0, calc(100% - var(--spacing) * 2) 0, 100% 100%, 0 100%);
+    background-color: var(--bg-color);
+}
+
+.manila-tab::before,
+.manila-tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 150%;
+    width: 2px;
+    background-color: var(--primary-accent);
+}
+
+.manila-tab::before {
+    left: 1px;
+    transform-origin: bottom left;
+    transform: rotate(19deg);
+}
+
+.manila-tab::after {
+    right: 1px;
+    transform-origin: bottom right;
+    transform: rotate(-19deg);
+}

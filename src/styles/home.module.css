@@ -26,21 +26,16 @@
     transform: rotate(-19deg);
 }
 
-.rightward-marquee {
-    display: inline-block;
+.primary-content {
+    @apply grid w-full px-5;
 
-    animation-name: marquee-right;
-    animation-duration: 80s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    grid-template-columns: 240px auto;
 }
 
-@keyframes marquee-right {
-    from {
-        transform: translateX(-100%);
-    }
+.primary-content > .tags {
+    grid-column: 1;
+}
 
-    to {
-        transform: translateX(0);
-    }
+.primary-content > .posts {
+    grid-column: 2;
 }

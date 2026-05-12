@@ -7,11 +7,31 @@
 }
 
 body {
+    min-height: 100dvh;
     background-color: var(--bg-color);
     color: var(--primary-accent);
     font-family: monospace;
 }
 
+/* SCROLLBAR STYLES */
+* {
+    scrollbar-color: var(--primary-accent-dim) var(--bg-color);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-accent-dim);
+}
+
+/* HOVER BUTTON */
 .hover-btn {
     background-color: var(--bg-color);
     transition-duration: 0.2s;
@@ -22,6 +42,7 @@ body {
     background-color: var(--primary-accent);
 }
 
+/* EMPHASIZED BUTTON */
 .accent-bordered-btn {
     border: 1px solid var(--primary-accent);
 }
@@ -31,6 +52,7 @@ body {
     top: 50%;
 }
 
+/* NON-EMPHASIZED BUTTON */
 .dim-accent-bordered-btn {
     border: 1px solid var(--primary-accent-dim);
 }
