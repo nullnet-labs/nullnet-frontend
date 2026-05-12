@@ -25,10 +25,6 @@
 }
 
 .shrink-wrapper > img {
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
     border: 1px outset var(--primary-accent);
 }
 

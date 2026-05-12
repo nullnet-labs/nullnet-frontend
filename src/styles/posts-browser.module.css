@@ -1,0 +1,11 @@
+@reference "../app/globals.css";
+
+.primary-content {
+    @apply grid w-full px-5;
+
+    grid-template-columns: 240px auto;
+}
+
+.paginator > * {
+    @apply inline-block m-4 p-4;
+}
