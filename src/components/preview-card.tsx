@@ -25,7 +25,7 @@ export default function PreviewCard({src, href, alt, featured}:PreviewCardProps)
                 href={href}
                 target="_blank"
                 className={classes(
-                    'block flex flex-col wrap-break-word p-2',
+                    'block flex flex-col wrap-break-word p-2 hover-glow',
                     styles['preview-box']
                 )}
             >

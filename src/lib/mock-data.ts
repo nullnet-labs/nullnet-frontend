@@ -38,6 +38,7 @@ export const tags: string[] = [
     'indie_web'
 ];
 
+// 42 unique entries
 export const posts: string[][] = [
     ['/dev/thumbs/nickhz.live_cyber.jpg', 'https://nickhz.live/cyber'],
     ['/dev/thumbs/ytoo.org.jpg', 'https://ytoo.org'],
@@ -59,5 +60,51 @@ export const posts: string[][] = [
     ['/dev/thumbs/neocities.org.jpg', 'https://neocities.org'],
     ['/dev/thumbs/nekoweb.org.jpg', 'https://nekoweb.org'],
     ['/dev/thumbs/www.tubcat.com.jpg', 'https://www.tubcat.com'],
-    ['/dev/thumbs/brisray.com_web_webring-list.htm.jpg', 'https://brisray.com/web/webring-list.htm']
+
+    ['/dev/thumbs/brisray.com_web_webring-list.htm.jpg', 'https://brisray.com/web/webring-list.htm'],
+    ['/dev/thumbs/newgrounds.com.jpg', 'https://newgrounds.com'],
+    ['/dev/thumbs/web.badges.world.jpg', 'https://web.badges.world'],
+    ['/dev/thumbs/frutigeraeroarchive.com.jpg', 'https://frutigeraeroarchive.com'],
+    ['/dev/thumbs/www.art.yale.edu.jpg', 'https://www.art.yale.edu'],
+    ['/dev/thumbs/www.arngren.net.jpg', 'https://www.arngren.net'],
+    ['/dev/thumbs/www.angels-heaven.org_english_default_en.htm.jpg', 'https://www.angels-heaven.org/english/default_en.htm'],
+    ['/dev/thumbs/cheapycore.net.jpg', 'https://cheapycore.net'],
+    ['/dev/thumbs/webamp.org.jpg', 'https://webamp.org'],
+    ['/dev/thumbs/modarchive.org.jpg', 'https://modarchive.org'],
+    ['/dev/thumbs/trace.moe.jpg', 'https://trace.moe'],
+    ['/dev/thumbs/bryantcodes.art.jpg', 'https://bryantcodes.art'],
+    ['/dev/thumbs/www.oldavista.com.jpg', 'https://www.oldavista.com'],
+    ['/dev/thumbs/vapor95.com.jpg', 'https://vapor95.com'],
+    ['/dev/thumbs/oldschool.runescape.com.jpg', 'https://oldschool.runescape.com'],
+    ['/dev/thumbs/onlinesequencer.net.jpg', 'https://onlinesequencer.net'],
+    ['/dev/thumbs/safebooru.donmai.us.jpg', 'https://safebooru.donmai.us'],
+    ['/dev/thumbs/crxw.net.jpg', 'https://crxw.net'],
+    ['/dev/thumbs/archive.sudomemo.net.jpg', 'https://archive.sudomemo.net'],
+    ['/dev/thumbs/cnvmp3.com.jpg', 'https://cnvmp3.com'],
+
+    ['/dev/thumbs/forum.agoraroad.com.jpg', 'https://forum.agoraroad.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
+    ['/dev/thumbs/example.com.jpg', 'https://example.com']
 ];

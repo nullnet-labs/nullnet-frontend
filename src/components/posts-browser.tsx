@@ -48,7 +48,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
 
             <section className="row-2 col-2">
 
-                <div className="flex flex-wrap gap-x-9 gap-y-4 m-3">
+                <div className="flex flex-wrap gap-x-9 gap-y-4 justify-around my-3">
                     {
                         featured && <PreviewCard src={selectedFeature[0]} href={selectedFeature[1]} featured={true} />
                     }
@@ -74,7 +74,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
                                     {pageNum}
                                 </span>
                             :
-                                <a key={pageNum} className="dim-accent-bordered-btn hover-btn">
+                                <a key={pageNum} className="dim-accent-bordered-btn hover-glow">
                                     {pageNum}
                                 </a>
                         )
