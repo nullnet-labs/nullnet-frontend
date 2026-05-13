@@ -10,7 +10,7 @@ export default function HeroSection() {
                 </div>
             </a>
 
-            <section className="text-center pt-4 mb-4" style={{textShadow: '0 0 16px var(--primary-accent)'}}>
+            <section className="text-center pt-12 md:pt-4 mb-4" style={{textShadow: '0 0 16px var(--primary-accent)'}}>
                 <h1 className="text-5xl">
                     Project Nullnet
                 </h1>

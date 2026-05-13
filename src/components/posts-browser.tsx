@@ -14,7 +14,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
     const postsPerPage = 20;
     const pages = Math.ceil(posts.length / postsPerPage);
 
-    let selectedPosts = posts.slice(0, postsPerPage);
+    const selectedPosts = posts.slice(0, postsPerPage);
     const selectedFeature: string[] = featured ? posts[Math.floor(Math.random() * posts.length)] : ['', ''];
 
     if (featured) {
@@ -26,11 +26,13 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
 
     return (
         <main className={styles['primary-content']}>
-            <h3 className="row-1 col-1 text-base my-3">
+            <input type="checkbox" id="tag-pane-expander" className={classes('hidden', styles['tag-pane-handle'])} />
+
+            <h3 className={classes('row-1 col-1 text-lg md:text-base my-3 hidden md:block', styles['tag-pane'])}>
                 Tags
             </h3>
 
-            <aside className="row-2 col-1">
+            <aside className={classes('row-2 col-1 text-lg/8 md:text-sm/5 hidden md:block text-blue-200', styles['tag-pane'])}>
                 <ul>
                     {
                         tags.map((tagName) => (
@@ -42,7 +44,13 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
                 </ul>
             </aside>
 
-            <h3 className="row-1 col-2 text-base m-3">
+            <label htmlFor="tag-pane-expander" className={classes('row-1 row-end-4 col-1 mr-2 md:hidden', styles['tag-pane-handle'])}>
+                <div className="sticky inline-block top-px text-lg px-30 pl-2 mx-auto">
+                    v ＴＡＧＳ v
+                </div>
+            </label>
+
+            <h3 className="row-1 col-2 text-lg md:text-base m-3 text-center md:text-left">
                 Posts
             </h3>
 
@@ -63,7 +71,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
 
             <nav className={classes('row-3 col-2 my-8 text-lg text-center', styles.paginator)}>
                 {
-                    // naive for now; would render 100 pages if they existed
+                    // naive for now; would render 100 page labels if they existed
                     Array.from({ length: pages }, (value, index) => {
                         const pageNum = index + 1;
 
@@ -81,6 +89,10 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
                     })
                 }
             </nav>
+
+            <aside className="row-span-3 col-3 hidden md:block md:pr-5" style={{width: 236}}>
+                {/* fingers crossed, this right-side space won't be needed for ads */}
+            </aside>
         </main>
     );
 };

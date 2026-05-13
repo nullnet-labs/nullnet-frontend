@@ -1,11 +1,56 @@
 @reference "../app/globals.css";
 
 .primary-content {
-    @apply grid w-full px-5;
+    @apply grid w-full;
 
-    grid-template-columns: 240px auto;
+    grid-template-columns: auto;
 }
 
 .paginator > * {
     @apply inline-block m-4 p-4;
+}
+
+.tag-pane {
+    @apply pl-5;
+}
+
+label.tag-pane-handle {
+    position: relative;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--primary-accent);
+    border-bottom: 1px solid var(--primary-accent);
+    border-right: 1px solid var(--primary-accent);
+    width: 44px;
+
+    /* Tailwind has no support for writing-mode & text-orientation... */
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+
+    -webkit-writing-mode: vertical-lr;
+    -webkit-text-orientation: sideways;
+
+    -ms-writing-mode: tb-rl;
+}
+
+.tag-pane-handle:checked ~ .tag-pane {
+    @apply block;
+
+    grid-column-end: 3;
+}
+
+.tag-pane-handle:checked ~ label.tag-pane-handle {
+    grid-column: 3;
+    border-right: none;
+    border-left: 1px solid var(--primary-accent);
+}
+
+.tag-pane-handle:checked ~ :not(.tag-pane, .tag-pane-handle) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (min-width: 48rem) {
+    .primary-content {
+        grid-template-columns: 240px auto;
+    }
 }
