@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import TopNav from "@/components/top-nav";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
     title: {
@@ -23,6 +24,7 @@ export default function RootLayout({children}:Readonly<{children: React.ReactNod
             <body>
                 <TopNav />
                 {children}
+                <SiteFooter />
             </body>
         </html>
     );
