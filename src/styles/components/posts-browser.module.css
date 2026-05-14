@@ -51,6 +51,12 @@ label.tag-pane-handle {
 
 @media (min-width: 48rem) {
     .primary-content {
-        grid-template-columns: 240px auto;
+        grid-template-columns: 232px auto;
+    }
+
+    @media (min-width: 64rem) {
+        .primary-content {
+            grid-template-columns: 240px auto;
+        }
     }
 }

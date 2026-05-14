@@ -56,7 +56,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
 
             <section className="row-2 col-2">
 
-                <div className="flex flex-wrap gap-x-9 gap-y-4 justify-around my-3">
+                <div className="flex flex-wrap gap-x-9 md:gap-x-0 lg:gap-x-9 gap-y-4 justify-around my-3">
                     {
                         featured && <PreviewCard src={selectedFeature[0]} href={selectedFeature[1]} featured={true} />
                     }
@@ -90,9 +90,13 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
                 }
             </nav>
 
-            <aside className="row-span-3 col-3 hidden md:block md:pr-5" style={{width: 236}}>
+            <aside className="row-span-3 col-3 hidden xl:block md:pr-5" style={{width: 236}}>
                 {/* fingers crossed, this right-side space won't be needed for ads */}
             </aside>
+
+            <section className="row-4 col-span-2 xl:col-span-3 text-center">
+                {/* but if the site starts getting traffic, i'll need this lower space to pay for keeping it alive */}
+            </section>
         </main>
     );
 };
