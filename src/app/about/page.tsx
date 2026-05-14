@@ -5,18 +5,20 @@ import SearchForm from "@/components/search-form";
 
 export default function AboutPage() {
     return (
-        <main className="text-center">
+        <main className="mt-12 text-center">
+            
+
             <SearchForm />
 
-            <h1 className="text-5xl font-semibold my-16">
+            <h1 className="text-5xl font-semibold mt-12 mb-12">
                 About Project Nullnet
             </h1>
 
             <article className={classes('text-left text-base w-[50dvw] m-auto', styles['about-article'])}>
                 <p>
                     Project Nullnet is an online Web-page discovery platform,
-                    to find the parts of the Internet that are otherwise hard
-                    to find.
+                    to find the parts of the Internet that have become
+                    difficult to find.
                 </p>
 
                 <p>
@@ -56,11 +58,11 @@ export default function AboutPage() {
 
                 <p>
                     Nullnet is still under development by its sole creator,
-                    Nicolas Hernandez.
+                    Nicolas Hernandez. Updated May 14th, 2026.
                 </p>
             </article>
 
-            <h1 className="text-5xl font-semibold my-16">
+            <h1 className="text-5xl font-semibold my-12">
                 t[n.n]
             </h1>
         </main>
