@@ -1,5 +1,5 @@
 import classes from '@/lib/css-class-list';
-import styles from '@/styles/top-nav.module.css';
+import styles from '@/component-styles/top-nav.module.css';
 
 export default function TopNav() {
     return (

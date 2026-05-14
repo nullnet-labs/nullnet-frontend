@@ -1,4 +1,4 @@
-import styles from '@/styles/posts-browser.module.css';
+import styles from '@/component-styles/posts-browser.module.css';
 
 import classes from '@/lib/css-class-list';
 import { tags, posts } from '@/lib/mock-data';

@@ -1,4 +1,4 @@
-import styles from '@/styles/preview-card.module.css';
+import styles from '@/component-styles/preview-card.module.css';
 import classes from '@/lib/css-class-list';
 
 type PreviewCardProps = {

@@ -1,4 +1,4 @@
-@reference "../app/globals.css";
+@reference "../../app/globals.css";
 
 .lower-bordered-nav {
     border-color: var(--primary-accent-dim);

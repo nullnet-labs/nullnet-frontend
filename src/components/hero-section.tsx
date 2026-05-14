@@ -1,4 +1,4 @@
-import styles from '@/styles/hero-section.module.css';
+import styles from '@/component-styles/hero-section.module.css';
 import Repeat from '@/components/repeat';
 
 export default function HeroSection() {

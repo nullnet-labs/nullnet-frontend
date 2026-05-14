@@ -1,0 +1,15 @@
+@reference "../../app/globals.css";
+
+.about-article > p {
+    @apply my-4;
+}
+
+.about-article {
+    width: 80dvw;
+}
+
+@media (min-width: 48rem) {
+    .about-article {
+        width: 50dvw;
+    }
+}

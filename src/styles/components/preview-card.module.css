@@ -1,4 +1,4 @@
-@reference "../app/globals.css";
+@reference "../../app/globals.css";
 
 .preview-card {
     width: calc(250px + 2 * var(--spacing));

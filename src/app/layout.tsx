@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import TopNav from "@/components/top-nav";
+
 export const metadata: Metadata = {
     title: {
         template: '%s | Project Nullnet',
@@ -18,7 +20,10 @@ export default function RootLayout({children}:Readonly<{children: React.ReactNod
             lang="en"
             className={`h-full`}
         >
-            <body>{children}</body>
+            <body>
+                <TopNav />
+                {children}
+            </body>
         </html>
     );
 }

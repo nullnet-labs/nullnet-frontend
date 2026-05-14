@@ -1,4 +1,4 @@
-@reference "../app/globals.css";
+@reference "../../app/globals.css";
 
 .primary-content {
     @apply grid w-full;
