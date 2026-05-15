@@ -9,7 +9,7 @@ export default function TopNav() {
                     <a href="/" className={classes('hover-btn', styles['nav-link'])}>
                         Tags
                     </a>
-                    <a href="/" className={classes('hover-btn', styles['nav-link'])}>
+                    <a href="/posts" className={classes('hover-btn', styles['nav-link'])}>
                         Posts
                     </a>
                     <a href="/" className={classes('hover-btn', styles['nav-link'])}>
