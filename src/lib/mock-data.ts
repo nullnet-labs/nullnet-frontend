@@ -68,7 +68,7 @@ export const posts: string[][] = [
     ['/dev/thumbs/www.art.yale.edu.jpg', 'https://www.art.yale.edu'],
     ['/dev/thumbs/www.arngren.net.jpg', 'https://www.arngren.net'],
     ['/dev/thumbs/www.angels-heaven.org_english_default_en.htm.jpg', 'https://www.angels-heaven.org/english/default_en.htm'],
-    ['/dev/thumbs/cheapycore.net.jpg', 'https://cheapycore.net'],
+    ['/dev/thumbs/cheapycore.com.jpg', 'https://cheapycore.com'],
     ['/dev/thumbs/webamp.org.jpg', 'https://webamp.org'],
     ['/dev/thumbs/modarchive.org.jpg', 'https://modarchive.org'],
     ['/dev/thumbs/trace.moe.jpg', 'https://trace.moe'],

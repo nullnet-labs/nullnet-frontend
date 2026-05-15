@@ -11,10 +11,10 @@ type PostsBrowserProps = {
 }
 
 export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
-    const postsPerPage = 20;
+    const postsPerPage = 18;
     const pages = Math.ceil(posts.length / postsPerPage);
 
-    const selectedPosts = posts.slice(0, postsPerPage);
+    const selectedPosts = posts.slice(postsPerPage * (page - 1), postsPerPage * page);
     const selectedFeature: string[] = featured ? posts[Math.floor(Math.random() * posts.length)] : ['', ''];
 
     if (featured) {
@@ -62,8 +62,8 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
                     }
 
                     {
-                        selectedPosts.map((preview) => (
-                            <PreviewCard src={preview[0]} href={preview[1]} key={preview[1]} />
+                        selectedPosts.map((preview, index) => (
+                            <PreviewCard src={preview[0]} href={preview[1]} key={`${preview[1]}-${index}`} />
                         ))
                     }
                 </div>
@@ -82,7 +82,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
                                     {pageNum}
                                 </span>
                             :
-                                <a key={pageNum} className="dim-accent-bordered-btn hover-glow">
+                                <a href={`/posts?page=${pageNum}`} key={pageNum} className="dim-accent-bordered-btn hover-glow">
                                     {pageNum}
                                 </a>
                         )
