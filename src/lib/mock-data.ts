@@ -124,147 +124,298 @@ export const previews: PreviewDatum[] = [
         thumb: "/dev/thumbs/nickhz.live_cyber.jpg",
         url: "https://nickhz.live/cyber",
         title: "Cyber Workbench",
-        tags: []
+        tags: [
+            'personal_homepage',
+            'noncommercial',
+            'no_ads',
+            'updated_2026',
+            'pure_vanilla',
+            'cyberpunk',
+            'experimental'
+        ]
     },
     {
         id: 2,
         thumb: "/dev/thumbs/ytoo.org.jpg",
         url: "https://ytoo.org",
         title: "Ytoo!",
-        tags: []
+        tags: [
+            'retro',
+            'noncommercial',
+            'fake_ads',
+            'search_engine',
+            'link_hub',
+            'has_guestbook',
+            'updated_2024',
+            '83x31_button',
+            'pure_vanilla',
+            'minimal_javascript'
+        ]
     },
     {
         id: 3,
         thumb: "/dev/thumbs/www.cameronsworld.net.jpg",
         url: "https://www.cameronsworld.net",
         title: "Cameron's World",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'retro',
+            'gif_graphics',
+            'link_hub',
+            'donation_link',
+            'vanilla',
+            'fake_ads',
+            'experimental'
+        ]
     },
     {
         id: 4,
         thumb: "/dev/thumbs/web.archive.org.jpg",
         url: "https://web.archive.org",
         title: "Wayback Machine",
-        tags: []
+        tags: [
+            'nonprofit',
+            'public_service',
+            'no_ads',
+            'search_engine',
+            'archive',
+            'updated_2026'
+        ]
     },
     {
         id: 5,
         thumb: "/dev/thumbs/virtualself.co.jpg",
         url: "https://virtualself.co",
         title: "Virtual Self",
-        tags: []
+        tags: [
+            'no_ads',
+            'cyberpunk',
+            'webgl',
+            'music_artist',
+            'experimental'
+        ]
     },
     {
         id: 6,
         thumb: "/dev/thumbs/everskies.com.jpg",
         url: "https://everskies.com",
         title: "Everskies - Everskies",
-        tags: []
+        tags: [
+            'gif_graphics',
+            'user_generated_content',
+            'pixel_art',
+            'community'
+        ]
     },
     {
         id: 7,
         thumb: "/dev/thumbs/forum.melonland.net.jpg",
         url: "https://forum.melonland.net",
         title: "Melonland Forum - Home!",
-        tags: []
+        tags: [
+            'noncommercial',
+            'fake_ads',
+            'retro',
+            'gif_graphics',
+            'community',
+            'user_generated_content',
+            'updated_2026',
+            'web_forum',
+            'indie_web',
+            'php'
+        ]
     },
     {
         id: 8,
         thumb: "/dev/thumbs/oyaswmi.net.jpg",
         url: "https://oyaswmi.net",
         title: "World Wide Website",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'personal_homepage',
+            'fansite',
+            'serial_experiments_lain',
+            'autoplay_audio',
+            'webgl',
+            'anime_inspired',
+            'cyberpunk',
+            'experimental'
+        ]
     },
     {
         id: 9,
         thumb: "/dev/thumbs/www.girlsgogames.com.jpg",
         url: "https://www.girlsgogames.com",
         title: "Girls games - Play free online games for girls at girlsgogames.com",
-        tags: []
+        tags: [
+            'updated_2026',
+            'browser_games',
+            'game_database'
+        ]
     },
     {
         id: 10,
         thumb: "/dev/thumbs/lain.angelic-trust.net_wired.html.jpg",
         url: "https://lain.angelic-trust.net/wired.html",
         title: "LAIN - SERIAL EXPERIMENT - OMNIPRESENCE",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'retro',
+            'frameset_site',
+            'gif_graphics',
+            'fansite',
+            'serial_experiments_lain',
+            'anime_inspired',
+            'cyberpunk',
+            'abandoned',
+            'experimental',
+            'php'
+        ]
     },
     {
         id: 11,
         thumb: "/dev/thumbs/www.mercurialworld.com.jpg",
         url: "https://www.mercurialworld.com",
         title: "Home | Mercurial World",
-        tags: []
+        tags: [
+            'fake_ads',
+            'retro',
+            'music_artist',
+            'gif_graphics',
+            'autoplay_audio',
+            'experimental'
+        ]
     },
     {
         id: 12,
         thumb: "/dev/thumbs/psxdatacenter.com.jpg",
         url: "https://psxdatacenter.com",
         title: "The Playstation Datacenter - PS1, PS2 & PSP games database with covers, cheats, screens, etc.",
-        tags: []
+        tags: [
+            'frameset_site',
+            'retro',
+            'retro_gaming',
+            'game_database',
+            'updated_2025',
+            'archive'
+        ]
     },
     {
         id: 13,
         thumb: "/dev/thumbs/espy.world.jpg",
         url: "https://espy.world",
         title: "▷ ESPY.WORLD ◁",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'personal_homepage',
+            'gif_graphics',
+            'vanilla'
+        ]
     },
     {
         id: 14,
         thumb: "/dev/thumbs/activetheory.net.jpg",
         url: "https://activetheory.net",
         title: "Active Theory - Creative Digital Experiences",
-        tags: []
+        tags: [
+            'no_ads',
+            'webgl',
+            'experimental'
+        ]
     },
     {
         id: 15,
         thumb: "/dev/thumbs/corru.observer.jpg",
         url: "https://corru.observer",
         title: "corru.observer",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'gif_graphics',
+            'pixel_art',
+            'vanilla'
+        ]
     },
     {
         id: 16,
         thumb: "/dev/thumbs/classic.systemspace.network.jpg",
         url: "https://classic.systemspace.network",
         title: "TSUKI",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'gif_graphics',
+            'vanilla',
+            'cyberpunk',
+            'anime_inspired',
+            'serial_experiments_lain',
+            'archived'
+        ]
     },
     {
         id: 17,
         thumb: "/dev/thumbs/eieio.games.jpg",
         url: "https://eieio.games",
         title: "eieio.games",
-        tags: []
+        tags: [
+            'no_ads',
+            'browser_games',
+            'nextjs'
+        ]
     },
     {
         id: 18,
         thumb: "/dev/thumbs/neocities.org.jpg",
         url: "https://neocities.org",
         title: "Neocities: Create your own free website!",
-        tags: []
+        tags: [
+            'no_ads',
+            'link_hub',
+            'user_generated_content',
+            'community'
+        ]
     },
     {
         id: 19,
         thumb: "/dev/thumbs/nekoweb.org.jpg",
         url: "https://nekoweb.org",
         title: "nekoweb",
-        tags: []
+        tags: [
+            'no_ads',
+            'link_hub',
+            'user_generated_content',
+            'community'
+        ]
     },
     {
         id: 20,
         thumb: "/dev/thumbs/www.tubcat.com.jpg",
         url: "https://www.tubcat.com",
         title: "THE WWW FAN WEB PAGE FOR TUBCAT THE FATTEST KITTY EVA :D!!!!!!!!!!!!!!!!!!!!!!",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'abandoned',
+            'the_www_fan_web_page_for_tubcat_the_fattest_kitty_eva!!!!!!!!!!!!!!!!!!!!!!'
+        ]
     },
     {
         id: 21,
         thumb: "/dev/thumbs/brisray.com_web_webring-list.htm.jpg",
         url: "https://brisray.com/web/webring-list.htm",
         title: "A Webring List",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'link_hub',
+            'public_service',
+            'archive',
+            'vanilla'
+        ]
     },
     {
         id: 22,
