@@ -38,79 +38,8 @@ export const tags: string[] = [
     'indie_web'
 ];
 
-// 42 unique entries
-export const posts: string[][] = [
-    ['/dev/thumbs/nickhz.live_cyber.jpg', 'https://nickhz.live/cyber'],
-    ['/dev/thumbs/ytoo.org.jpg', 'https://ytoo.org'],
-    ['/dev/thumbs/www.cameronsworld.net.jpg', 'https://www.cameronsworld.net'],
-    ['/dev/thumbs/web.archive.org.jpg', 'https://web.archive.org'],
-    ['/dev/thumbs/virtualself.co.jpg', 'https://virtualself.co'],
-    ['/dev/thumbs/everskies.com.jpg', 'https://everskies.com'],
-    ['/dev/thumbs/forum.melonland.net.jpg', 'https://forum.melonland.net'],
-    ['/dev/thumbs/oyaswmi.net.jpg', 'https://oyaswmi.net'],
-    ['/dev/thumbs/www.girlsgogames.com.jpg', 'https://www.girlsgogames.com'],
-    ['/dev/thumbs/lain.angelic-trust.net_wired.html.jpg', 'https://lain.angelic-trust.net/wired.html'],
-    ['/dev/thumbs/www.mercurialworld.com.jpg', 'https://www.mercurialworld.com'],
-    ['/dev/thumbs/psxdatacenter.com.jpg', 'https://psxdatacenter.com'],
-    ['/dev/thumbs/espy.world.jpg', 'https://espy.world'],
-    ['/dev/thumbs/activetheory.net.jpg', 'https://activetheory.net'],
-    ['/dev/thumbs/corru.observer.jpg', 'https://corru.observer'],
-    ['/dev/thumbs/classic.systemspace.network.jpg', 'https://classic.systemspace.network'],
-    ['/dev/thumbs/eieio.games.jpg', 'https://eieio.games'],
-    ['/dev/thumbs/neocities.org.jpg', 'https://neocities.org'],
-    ['/dev/thumbs/nekoweb.org.jpg', 'https://nekoweb.org'],
-    ['/dev/thumbs/www.tubcat.com.jpg', 'https://www.tubcat.com'],
-
-    ['/dev/thumbs/brisray.com_web_webring-list.htm.jpg', 'https://brisray.com/web/webring-list.htm'],
-    ['/dev/thumbs/newgrounds.com.jpg', 'https://newgrounds.com'],
-    ['/dev/thumbs/web.badges.world.jpg', 'https://web.badges.world'],
-    ['/dev/thumbs/frutigeraeroarchive.org.jpg', 'https://frutigeraeroarchive.org'],
-    ['/dev/thumbs/www.art.yale.edu.jpg', 'https://www.art.yale.edu'],
-    ['/dev/thumbs/www.arngren.net.jpg', 'https://www.arngren.net'],
-    ['/dev/thumbs/www.angels-heaven.org_english_default_en.htm.jpg', 'https://www.angels-heaven.org/english/default_en.htm'],
-    ['/dev/thumbs/cheapycore.com.jpg', 'https://cheapycore.com'],
-    ['/dev/thumbs/webamp.org.jpg', 'https://webamp.org'],
-    ['/dev/thumbs/modarchive.org.jpg', 'https://modarchive.org'],
-    ['/dev/thumbs/trace.moe.jpg', 'https://trace.moe'],
-    ['/dev/thumbs/bryantcodes.art.jpg', 'https://bryantcodes.art'],
-    ['/dev/thumbs/www.oldavista.com.jpg', 'https://www.oldavista.com'],
-    ['/dev/thumbs/vapor95.com.jpg', 'https://vapor95.com'],
-    ['/dev/thumbs/oldschool.runescape.com.jpg', 'https://oldschool.runescape.com'],
-    ['/dev/thumbs/onlinesequencer.net.jpg', 'https://onlinesequencer.net'],
-    ['/dev/thumbs/safebooru.donmai.us.jpg', 'https://safebooru.donmai.us'],
-    ['/dev/thumbs/crxw.net.jpg', 'https://crxw.net'],
-    ['/dev/thumbs/archive.sudomemo.net.jpg', 'https://archive.sudomemo.net'],
-    ['/dev/thumbs/cnvmp3.com.jpg', 'https://cnvmp3.com'],
-
-    ['/dev/thumbs/forum.agoraroad.com.jpg', 'https://forum.agoraroad.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com'],
-    ['/dev/thumbs/example.com.jpg', 'https://example.com']
-];
-
 // for displaying on the post-previews browser
-interface PreviewDatum {
+export interface PreviewDatum {
     id: number,
     thumb: string,
     url: string,
@@ -118,6 +47,7 @@ interface PreviewDatum {
     tags: string[]
 }
 
+// 42 unique entries
 export const previews: PreviewDatum[] = [
     {
         id: 1,

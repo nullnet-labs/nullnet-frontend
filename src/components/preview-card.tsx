@@ -1,14 +1,15 @@
 import styles from '@/component-styles/preview-card.module.css';
 import classes from '@/lib/css-class-list';
+import { PreviewDatum } from '@/lib/mock-data';
 
 type PreviewCardProps = {
-    src: string,
-    href: string,
-    alt?: string,
+    datum: PreviewDatum,
     featured?: boolean
 }
 
-export default function PreviewCard({src, href, alt, featured}:PreviewCardProps) {
+export default function PreviewCard({ datum, featured }: PreviewCardProps) {
+    
+
     return (
         <article className={classes(
             'block flex flex-col justify-center',
@@ -22,25 +23,29 @@ export default function PreviewCard({src, href, alt, featured}:PreviewCardProps)
                 </header>
             }
             <a
-                href={href}
+                href={datum.url}
                 target="_blank"
                 className={classes(
                     'block flex flex-col wrap-break-word p-2 hover-glow',
                     styles['preview-box']
                 )}
+                title={datum.tags.join(' ')}
             >
                 <div className={classes(
                     'flex justify-center',
                     styles['shrink-wrapper']
                 )}>
                     <img
-                        src={src}
-                        alt={href || 'web page'}
+                        src={datum.thumb}
+                        alt={datum.title}
                         loading="lazy"
                     />
                 </div>
-                <p>
-                    {href}
+                <p className="text-base font-black whitespace-nowrap overflow-hidden text-ellipsis max-w-full">
+                    {datum.title}
+                </p>
+                <p className="whitespace-nowrap overflow-hidden text-ellipsis max-w-full" style={{color: 'var(--primary-accent-dim)'}}>
+                    <ins>{datum.url}</ins>
                 </p>
             </a>
         </article>

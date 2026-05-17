@@ -1,7 +1,7 @@
 import styles from '@/component-styles/posts-browser.module.css';
 
 import classes from '@/lib/css-class-list';
-import { tags, posts } from '@/lib/mock-data';
+import { tags, posts, previews, PreviewDatum } from '@/lib/mock-data';
 
 import PreviewCard from '@/components/preview-card';
 
@@ -12,10 +12,10 @@ type PostsBrowserProps = {
 
 export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
     const postsPerPage = 18;
-    const pages = Math.ceil(posts.length / postsPerPage);
+    const pages = Math.ceil(previews.length / postsPerPage);
 
-    const selectedPosts = posts.slice(postsPerPage * (page - 1), postsPerPage * page);
-    const selectedFeature: string[] = featured ? posts[Math.floor(Math.random() * posts.length)] : ['', ''];
+    const selectedPosts:PreviewDatum[] = previews.slice(postsPerPage * (page - 1), postsPerPage * page);
+    const selectedFeature:PreviewDatum = previews[Math.floor(Math.random() * previews.length)];
 
     if (featured) {
         const featureIndex = selectedPosts.indexOf(selectedFeature);
@@ -58,12 +58,12 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
 
                 <div className="flex flex-wrap gap-x-9 md:gap-x-0 lg:gap-x-9 gap-y-4 justify-around my-3">
                     {
-                        featured && <PreviewCard src={selectedFeature[0]} href={selectedFeature[1]} featured={true} />
+                        featured && <PreviewCard datum={selectedFeature} featured={true} />
                     }
 
                     {
                         selectedPosts.map((preview, index) => (
-                            <PreviewCard src={preview[0]} href={preview[1]} key={`${preview[1]}-${index}`} />
+                            <PreviewCard datum={preview} key={preview.id} />
                         ))
                     }
                 </div>
