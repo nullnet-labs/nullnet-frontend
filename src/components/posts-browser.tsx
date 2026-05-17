@@ -1,7 +1,7 @@
 import styles from '@/component-styles/posts-browser.module.css';
 
 import classes from '@/lib/css-class-list';
-import { tags, posts, previews, PreviewDatum } from '@/lib/mock-data';
+import { previews, PreviewDatum } from '@/lib/mock-data';
 
 import PreviewCard from '@/components/preview-card';
 

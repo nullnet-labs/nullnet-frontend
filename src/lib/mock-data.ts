@@ -1,43 +1,4 @@
 
-export const tags: string[] = [
-    'independent',
-    'nonprofit',
-    'noncommercial',
-    'no_ads',
-    'search_engine',
-    'retro',
-    'personal_homepage',
-    'music_artist',
-    'guestbook',
-    'link_hub',
-    'autoplay_audio',
-    'gif_graphics',
-    'donation_link',
-    'user_generated_content',
-    'public_service',
-    'updated_2024',
-    'updated_2026',
-    'minimal_javascript',
-    'vanilla',
-    'pure_vanilla',
-    'jquery',
-    'webgl',
-    'pixel_art',
-    'browser_games',
-    'portal_style',
-    'retro_gaming',
-    'game_database',
-    'fansite',
-    'serial_experiments_lain',
-    'anime_inspired',
-    'cyberpunk',
-    'archive',
-    'abandoned',
-    'community',
-    'experimental',
-    'indie_web'
-];
-
 // for displaying on the post-previews browser
 export interface PreviewDatum {
     id: number,
