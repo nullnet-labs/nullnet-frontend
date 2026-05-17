@@ -14,15 +14,19 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
     const postsPerPage = 18;
     const pages = Math.ceil(previews.length / postsPerPage);
 
-    const selectedPosts:PreviewDatum[] = previews.slice(postsPerPage * (page - 1), postsPerPage * page);
-    const selectedFeature:PreviewDatum = previews[Math.floor(Math.random() * previews.length)];
+    const selectedPosts: PreviewDatum[] = previews.slice(postsPerPage * (page - 1), postsPerPage * page);
+    const selectedFeature: PreviewDatum = previews[Math.floor(Math.random() * previews.length)];
 
+    const tagSet: Set<string> = new Set();
     if (featured) {
+        selectedFeature.tags.forEach(tag => tagSet.add(tag));
+
         const featureIndex = selectedPosts.indexOf(selectedFeature);
         if (featureIndex >= 0) {
             selectedPosts.splice(featureIndex, 1);
         }
     }
+    selectedPosts.forEach(post => post.tags.forEach(tag => tagSet.add(tag)));
 
     return (
         <main className={styles['primary-content']}>
@@ -35,7 +39,7 @@ export default function PostsBrowser({ page, featured }: PostsBrowserProps) {
             <aside className={classes('row-2 col-1 text-lg/8 md:text-sm/5 hidden md:block text-blue-200', styles['tag-pane'])}>
                 <ul>
                     {
-                        tags.map((tagName) => (
+                        Array.from(tagSet).map((tagName) => (
                             <li key={tagName}>
                                 {tagName}
                             </li>
