@@ -422,301 +422,500 @@ export const previews: PreviewDatum[] = [
         thumb: "/dev/thumbs/newgrounds.com.jpg",
         url: "https://newgrounds.com",
         title: "Newgrounds.com — Everything, By Everyone",
-        tags: []
+        tags: [
+            'user_generated_content',
+            'updated_2026',
+            'browser_games',
+            'web_portal',
+            'community'
+        ]
     },
     {
         id: 23,
         thumb: "/dev/thumbs/web.badges.world.jpg",
         url: "https://web.badges.world",
         title: "web-badges-world",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'retro',
+            'vanilla',
+            'gif_graphics'
+        ]
     },
     {
         id: 24,
         thumb: "/dev/thumbs/frutigeraeroarchive.org.jpg",
         url: "https://frutigeraeroarchive.org",
         title: "Frutiger Aero Archive",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'retro',
+            'jquery',
+            'browser_games',
+            'donation_link',
+            'links_hub',
+            '88x31_button'
+        ]
     },
     {
         id: 25,
         thumb: "/dev/thumbs/www.art.yale.edu.jpg",
         url: "https://www.art.yale.edu",
         title: "Home - Yale School of Art",
-        tags: []
+        tags: [
+            'no_ads',
+            'user_generated_content',
+            'vanilla',
+            'experimental'
+        ]
     },
     {
         id: 26,
         thumb: "/dev/thumbs/www.arngren.net.jpg",
         url: "https://www.arngren.net",
         title: "ATV, drone, elbil, elsykkel, rc helikopter, ATV, robot, elatv",
-        tags: []
+        tags: [
+            'retro',
+            'experimental',
+            'storefront'
+        ]
     },
     {
         id: 27,
         thumb: "/dev/thumbs/www.angels-heaven.org_english_default_en.htm.jpg",
         url: "https://www.angels-heaven.org/english/default_en.htm",
         title: "EN - TALKS WITH TEACHINGS FROM MY COSMIC FRIENDS - universe-people.org",
-        tags: []
+        tags: [
+            'retro',
+            'gif_graphics',
+            'frameset_site',
+            'experimental'
+        ]
     },
     {
         id: 28,
         thumb: "/dev/thumbs/cheapycore.com.jpg",
         url: "https://cheapycore.com",
         title: "CHEAPCORE",
-        tags: []
+        tags: [
+            'noncommercial',
+            'fake_ads',
+            'astro_web_framework'
+        ]
     },
     {
         id: 29,
         thumb: "/dev/thumbs/webamp.org.jpg",
         url: "https://webamp.org",
         title: "Webamp · Winamp 2 in your browser",
-        tags: []
+        tags: [
+            'no_ads',
+            'retro'
+        ]
     },
     {
         id: 30,
         thumb: "/dev/thumbs/modarchive.org.jpg",
         url: "https://modarchive.org",
         title: "The Mod Archive v4.0b - A distinctive collection of modules",
-        tags: []
+        tags: [
+            'no_ads',
+            'donation_link',
+            'retro',
+            'community',
+            'user_generated_content',
+            'vanilla'
+        ]
     },
     {
         id: 31,
         thumb: "/dev/thumbs/trace.moe.jpg",
         url: "https://trace.moe",
         title: "Anime Scene Search Engine - trace.moe",
-        tags: []
+        tags: [
+            'search_engine',
+            'donation_link',
+            'nextjs'
+        ]
     },
     {
         id: 32,
         thumb: "/dev/thumbs/bryantcodes.art.jpg",
         url: "https://bryantcodes.art",
         title: "bryantcodes.art",
-        tags: []
+        tags: [
+            'no_ads',
+            'personal_homepage',
+            'experimental',
+            'nextjs'
+        ]
     },
     {
         id: 33,
         thumb: "/dev/thumbs/www.oldavista.com.jpg",
         url: "https://www.oldavista.com",
         title: "Old'aVista: Home",
-        tags: []
+        tags: [
+            'retro',
+            'noncommercial',
+            'fake_ads',
+            'search_engine',
+            'link_hub',
+            'pure_vanilla',
+            'minimal_javascript'
+        ]
     },
     {
         id: 34,
         thumb: "/dev/thumbs/vapor95.com.jpg",
         url: "https://vapor95.com",
         title: "Vapor95.com | Vaporwave & Aesthetic Clothing",
-        tags: []
+        tags: [
+            'storefront',
+            'shopify'
+        ]
     },
     {
         id: 35,
         thumb: "/dev/thumbs/oldschool.runescape.com.jpg",
         url: "https://oldschool.runescape.com",
         title: "Old School RuneScape - Play Old School RS",
-        tags: []
+        tags: [
+            'no_ads',
+            'retro',
+            'athena_web_framework',
+            'community',
+            'retro_gaming'
+        ]
     },
     {
         id: 36,
         thumb: "/dev/thumbs/onlinesequencer.net.jpg",
         url: "https://onlinesequencer.net",
         title: "Online Sequencer",
-        tags: []
+        tags: [
+            'user_generated_content',
+            'jquery'
+        ]
     },
     {
         id: 37,
         thumb: "/dev/thumbs/safebooru.donmai.us.jpg",
         url: "https://safebooru.donmai.us",
         title: "Danbooru: Anime Image Board",
-        tags: []
+        tags: [
+            'anime_inspired',
+            'user_generated_content'
+        ]
     },
     {
         id: 38,
         thumb: "/dev/thumbs/crxw.net.jpg",
         url: "https://crxw.net",
         title: "crxw's special place",
-        tags: []
+        tags: [
+            'personal_homepage',
+            'music_artist',
+            'anime_inspired',
+            'gif_graphics',
+            'retro',
+            'fake_ads',
+            'vanilla'
+        ]
     },
     {
         id: 39,
         thumb: "/dev/thumbs/archive.sudomemo.net.jpg",
         url: "https://archive.sudomemo.net",
         title: "Flipnote Archive",
-        tags: []
+        tags: [
+            'archive',
+            'donation_link'
+        ]
     },
     {
         id: 40,
         thumb: "/dev/thumbs/cnvmp3.com.jpg",
         url: "https://cnvmp3.com",
         title: "Youtube to MP3 Converter (Ad-free)",
-        tags: []
+        tags: [
+            'noncommercial',
+            'no_ads',
+            'donation_link'
+        ]
     },
     {
         id: 41,
         thumb: "/dev/thumbs/forum.agoraroad.com.jpg",
         url: "https://forum.agoraroad.com",
         title: "Agora Road's Macintosh Cafe",
-        tags: []
+        tags: [
+            'noncommercial',
+            'fake_ads',
+            'retro',
+            'gif_graphics',
+            'community',
+            'user_generated_content',
+            'updated_2026',
+            'web_forum',
+            'indie_web',
+            'php'
+        ]
     },
     {
         id: 42,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 43,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 44,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 45,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 46,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 47,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 48,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 49,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 50,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 51,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 52,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 53,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 54,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 55,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 56,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 57,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 58,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 59,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 60,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 61,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 62,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 63,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     },
     {
         id: 64,
         thumb: "/dev/thumbs/example.com.jpg",
         url: "https://example.com",
         title: "Example Domain",
-        tags: []
+        tags: [
+            'nonprofit',
+            'no_ads',
+            'pure_vanilla'
+        ]
     }
 ]
 
