@@ -13,7 +13,7 @@ export default function TopNav() {
                         Posts
                     </a>
                     <a href="/" className={classes('hover-btn', styles['nav-link'])}>
-                        [nullnet]
+                        t[n.n]
                     </a>
                 </nav>
             </div>
