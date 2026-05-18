@@ -808,11 +808,12 @@ export const previews: PreviewDatum[] = [
             'pure_vanilla'
         ]
     }
-]
+];
 
 // for displaying as the page that focuses on an individual post
 interface PostDatum {
     id: number,
+    image: string,
     url: string,
     title: string,
     tags: string[],
@@ -822,6 +823,24 @@ interface PostDatum {
 }
 
 // for populating each post's page...
-export const postData:PostDatum[] = [
-    
-]
+// map used for O(1) post data retrieval by id, to mock a database PK index
+export const postData: Map<number, PostDatum> = new Map();
+for (const preview of previews) {
+    postData.set(
+        preview.id,
+        {
+            id: preview.id,
+            // each thumb is "/dev/thumbs/[mysite].jpg" while each image is just "/dev/[mysite].png"
+            // similar strategy in production? just remember to shard similarly across renders!
+            image: preview.thumb.replace(
+                /^\/dev\/thumbs\/(.+)\.jpg$/,
+                '/dev/$1.png'
+            ),
+            url: preview.url,
+            title: preview.title,
+            tags: preview.tags,
+            linkedTo: [],
+            linkedFrom: []
+        }
+    );
+}
