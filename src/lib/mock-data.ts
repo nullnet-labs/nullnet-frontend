@@ -844,3 +844,8 @@ for (const preview of previews) {
         }
     );
 }
+
+postData.get(2)?.linkedTo.push(previews[6]);
+postData.get(2)?.linkedTo.push(previews[17]);
+postData.get(2)?.linkedTo.push(previews[18]);
+postData.get(2)?.linkedFrom.push(previews[6]);

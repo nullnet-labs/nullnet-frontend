@@ -1,4 +1,5 @@
 import SearchForm from "@/components/search-form";
+import PreviewCard from '@/components/preview-card';
 import styles from "@/styles/post-viewer.module.css";
 import { postData } from "@/lib/mock-data";
 
@@ -66,14 +67,36 @@ export default async function PostPage(props:PostPageProps) {
                     <br />
 
                     <h3>
-                        <a href={postDatum.url} target="_blank" className="text-lg underline" >
-                            {postDatum.url}
+                        <a href={postDatum.url} target="_blank" className="text-lg underline">
+                            {postDatum.url}&#x1f517;
                         </a>
                     </h3>
                 </section>
 
-                <nav className={'row-3 col-2 my-8 text-lg text-center'}>
-                    {/* linked-to & linked-from combination nav; may use same css checkbox trick as above */}
+                <nav className="relative row-3 col-2 my-8 min-w-px">
+                    <h3 className="text-lg">
+                        Linked to:
+                    </h3>
+                    <nav className={styles['linked-pages']}>
+                        {
+                            postDatum.linkedTo.map((linkedPage, index) => 
+                                <PreviewCard datum={linkedPage} key={`linked-to-${linkedPage.id}`} />
+                            )
+                        }
+                    </nav>
+
+                    <br />
+
+                    <h3 className="text-lg">
+                        Linked from:
+                    </h3>
+                    <nav className={styles['linked-pages']}>
+                        {
+                            postDatum.linkedFrom.map((linkedPage, index) => 
+                                <PreviewCard datum={linkedPage} key={`linked-from-${linkedPage.id}`} />
+                            )
+                        }
+                    </nav>
                 </nav>
 
                 <aside className="row-span-3 col-3 hidden xl:block md:pr-5" style={{width: 236}}>

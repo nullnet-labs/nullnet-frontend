@@ -12,7 +12,7 @@ export default function PreviewCard({ datum, featured }: PreviewCardProps) {
 
     return (
         <article className={classes(
-            'block flex flex-col justify-center',
+            'flex flex-col justify-center',
             styles['preview-card']
         )}>
             {

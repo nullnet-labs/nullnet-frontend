@@ -1,7 +1,12 @@
+/* 
+    FOR PAGE AT:
+
+    app/posts/[id]/page.tsx
+*/
 @reference "../../app/globals.css";
 
 .primary-content {
-    @apply grid w-full;
+    @apply grid w-full min-w-px;
 
     grid-template-columns: auto;
 }
@@ -43,6 +48,12 @@ label.tag-pane-handle {
 .tag-pane-handle:checked ~ :not(.tag-pane, .tag-pane-handle) {
     opacity: 0;
     pointer-events: none;
+}
+
+.linked-pages {
+    @apply flex w-full min-w-px gap-x-9 px-4 py-2 overflow-x-auto box-border;
+
+    border: 2px inset var(--primary-accent);
 }
 
 @media (min-width: 48rem) {
