@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, ReactNode } from "react";
 
 type RepeatProps = {
     children: ReactNode,

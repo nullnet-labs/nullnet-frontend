@@ -1,4 +1,3 @@
-import SearchForm from "@/components/search-form";
 import PostsBrowser from "@/components/posts-browser";
 
 type PostsPageParams = {
@@ -14,9 +13,6 @@ export default async function PostsPage({ searchParams }: PostsPageProps) {
     const pageNum = Math.max(1, parseInt(urlParams?.page || '1') || 1);
 
     return (
-        <>
-            <SearchForm />
-            <PostsBrowser page={pageNum} featured={pageNum == 1} />
-        </>
+        <PostsBrowser page={pageNum} featured={pageNum == 1} />
     )
 }
