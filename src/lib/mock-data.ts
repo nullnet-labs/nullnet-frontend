@@ -849,3 +849,8 @@ postData.get(2)?.linkedTo.push(previews[6]);
 postData.get(2)?.linkedTo.push(previews[17]);
 postData.get(2)?.linkedTo.push(previews[18]);
 postData.get(2)?.linkedFrom.push(previews[6]);
+
+postData.get(7)?.linkedTo.push(previews[1]);
+postData.get(7)?.linkedFrom.push(previews[1]);
+postData.get(18)?.linkedFrom.push(previews[1]);
+postData.get(19)?.linkedFrom.push(previews[1]);

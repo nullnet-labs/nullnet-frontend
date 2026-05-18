@@ -79,9 +79,13 @@ export default async function PostPage(props:PostPageProps) {
                     </h3>
                     <nav className={styles['linked-pages']}>
                         {
-                            postDatum.linkedTo.map((linkedPage, index) => 
+                            postDatum.linkedTo.length ? postDatum.linkedTo.map((linkedPage, index) => 
                                 <PreviewCard datum={linkedPage} key={`linked-to-${linkedPage.id}`} />
                             )
+                                :
+                            <aside>
+                                Nothing!
+                            </aside>
                         }
                     </nav>
 
@@ -92,9 +96,13 @@ export default async function PostPage(props:PostPageProps) {
                     </h3>
                     <nav className={styles['linked-pages']}>
                         {
-                            postDatum.linkedFrom.map((linkedPage, index) => 
+                            postDatum.linkedFrom.length ? postDatum.linkedFrom.map((linkedPage, index) => 
                                 <PreviewCard datum={linkedPage} key={`linked-from-${linkedPage.id}`} />
                             )
+                                :
+                            <aside>
+                                Nothing!
+                            </aside>
                         }
                     </nav>
                 </nav>

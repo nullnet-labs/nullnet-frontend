@@ -54,6 +54,11 @@ label.tag-pane-handle {
     @apply flex w-full min-w-px gap-x-9 px-4 py-2 overflow-x-auto box-border;
 
     border: 2px inset var(--primary-accent);
+    height: 220px;
+}
+
+.linked-pages > aside {
+    @apply text-base;
 }
 
 @media (min-width: 48rem) {
