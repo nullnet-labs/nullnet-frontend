@@ -23,8 +23,7 @@ export default function PreviewCard({ datum, featured }: PreviewCardProps) {
                 </header>
             }
             <a
-                href={datum.url}
-                target="_blank"
+                href={`/posts/${datum.id}`}
                 className={classes(
                     'block flex flex-col wrap-break-word p-2 hover-glow',
                     styles['preview-box']
