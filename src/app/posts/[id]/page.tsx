@@ -18,6 +18,15 @@ export default async function PostPage(props:PostPageProps) {
         notFound();
     }
 
+    const tagMap: Map<string, Set<string>> = new Map();
+    postDatum.tags.forEach(tag => {
+        if (!tagMap.has(tag.type)) {
+            tagMap.set(tag.type, new Set<string>());
+        }
+
+        tagMap.get(tag.type).add(tag.name);
+    })
+
     return (
         <>
             <SearchForm />
@@ -29,14 +38,36 @@ export default async function PostPage(props:PostPageProps) {
                     Tags
                 </h3>
 
-                <aside className={classes('row-2 col-1 text-lg/8 md:text-sm/5 hidden md:block text-blue-200', styles['tag-pane'])}>
+                <aside className={classes('row-2 col-1 text-lg/8 md:text-sm/5 hidden md:block', styles['tag-pane'])}>
                     <ul>
                         {
-                            Array.from(postDatum.tags).map((tagName) => (
-                                <li key={tagName}>
-                                    {tagName}
-                                </li>
-                            ))
+                            Array.from(tagMap.entries()).map(([type, tags]) => {
+                                return (<li key={type}>
+                                        <h4 className={"text-lg md:text-base italic my-2"}>
+                                            {type}
+                                        </h4>
+
+                                        <ul>
+                                            {
+                                                /*
+                                                    These tagging systems tend to have a number of posts for each tag.
+
+                                                    Here, they'd be useful to differentiate tags from one another in the UI,
+                                                    since removing the underscores can make a multi-line tag harder to 
+                                                    discern from the next tag.
+
+                                                    For now, [num] is added as a placeholder.
+                                                */
+                                                Array.from(tags).map(tag => (
+                                                    <li key={tag}>
+                                                        {tag.replace(/_/g, ' ')} <span style={{color: 'var(--primary-accent-dim)'}}>[num]</span>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </li>
+                                );
+                            })
                         }
                     </ul>
                 </aside>

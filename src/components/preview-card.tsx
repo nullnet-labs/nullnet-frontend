@@ -8,8 +8,6 @@ type PreviewCardProps = {
 }
 
 export default function PreviewCard({ datum, featured }: PreviewCardProps) {
-    
-
     return (
         <article className={classes(
             'flex flex-col justify-center',
@@ -28,7 +26,7 @@ export default function PreviewCard({ datum, featured }: PreviewCardProps) {
                     'block flex flex-col wrap-break-word p-2 hover-glow',
                     styles['preview-box']
                 )}
-                title={datum.tags.join(' ')}
+                title={datum.tags.map((tag) => tag.name).join(' ')}
             >
                 <div className={classes(
                     'flex justify-center',

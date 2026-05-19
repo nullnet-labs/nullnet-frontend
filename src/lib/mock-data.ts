@@ -1,11 +1,16 @@
 
+interface TagItem {
+    name: string,
+    type: string
+};
+
 // for displaying on the post-previews browser
 export interface PreviewDatum {
     id: number,
     thumb: string,
     url: string,
     title: string
-    tags: string[]
+    tags: TagItem[]
 }
 
 // 42 unique entries
@@ -16,13 +21,34 @@ export const previews: PreviewDatum[] = [
         url: "https://nickhz.live/cyber",
         title: "Cyber Workbench",
         tags: [
-            'personal_homepage',
-            'noncommercial',
-            'no_ads',
-            'updated_2026',
-            'pure_vanilla',
-            'cyberpunk',
-            'experimental'
+            {
+                name: "personal_homepage",
+                type: "General"
+            },
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "updated_2026",
+                type: "General"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "cyberpunk",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -31,16 +57,46 @@ export const previews: PreviewDatum[] = [
         url: "https://ytoo.org",
         title: "Ytoo!",
         tags: [
-            'retro',
-            'noncommercial',
-            'fake_ads',
-            'search_engine',
-            'link_hub',
-            'has_guestbook',
-            'updated_2024',
-            '83x31_button',
-            'pure_vanilla',
-            'minimal_javascript'
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "search_engine",
+                type: "General"
+            },
+            {
+                name: "link_hub",
+                type: "General"
+            },
+            {
+                name: "has_guestbook",
+                type: "General"
+            },
+            {
+                name: "updated_2024",
+                type: "General"
+            },
+            {
+                name: "83x31_button",
+                type: "General"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "minimal_javascript",
+                type: "General"
+            }
         ]
     },
     {
@@ -49,15 +105,42 @@ export const previews: PreviewDatum[] = [
         url: "https://www.cameronsworld.net",
         title: "Cameron's World",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'retro',
-            'gif_graphics',
-            'link_hub',
-            'donation_link',
-            'vanilla',
-            'fake_ads',
-            'experimental'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "link_hub",
+                type: "General"
+            },
+            {
+                name: "donation_link",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -66,12 +149,30 @@ export const previews: PreviewDatum[] = [
         url: "https://web.archive.org",
         title: "Wayback Machine",
         tags: [
-            'nonprofit',
-            'public_service',
-            'no_ads',
-            'search_engine',
-            'archive',
-            'updated_2026'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "public_service",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "search_engine",
+                type: "General"
+            },
+            {
+                name: "archive",
+                type: "General"
+            },
+            {
+                name: "updated_2026",
+                type: "General"
+            }
         ]
     },
     {
@@ -80,11 +181,26 @@ export const previews: PreviewDatum[] = [
         url: "https://virtualself.co",
         title: "Virtual Self",
         tags: [
-            'no_ads',
-            'cyberpunk',
-            'webgl',
-            'music_artist',
-            'experimental'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "cyberpunk",
+                type: "General"
+            },
+            {
+                name: "webgl",
+                type: "Web Development Tech"
+            },
+            {
+                name: "music_artist",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -93,10 +209,22 @@ export const previews: PreviewDatum[] = [
         url: "https://everskies.com",
         title: "Everskies - Everskies",
         tags: [
-            'gif_graphics',
-            'user_generated_content',
-            'pixel_art',
-            'community'
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "pixel_art",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            }
         ]
     },
     {
@@ -105,16 +233,46 @@ export const previews: PreviewDatum[] = [
         url: "https://forum.melonland.net",
         title: "Melonland Forum - Home!",
         tags: [
-            'noncommercial',
-            'fake_ads',
-            'retro',
-            'gif_graphics',
-            'community',
-            'user_generated_content',
-            'updated_2026',
-            'web_forum',
-            'indie_web',
-            'php'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "updated_2026",
+                type: "General"
+            },
+            {
+                name: "web_forum",
+                type: "General"
+            },
+            {
+                name: "indie_web",
+                type: "General"
+            },
+            {
+                name: "php",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -123,16 +281,46 @@ export const previews: PreviewDatum[] = [
         url: "https://oyaswmi.net",
         title: "World Wide Website",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'personal_homepage',
-            'fansite',
-            'serial_experiments_lain',
-            'autoplay_audio',
-            'webgl',
-            'anime_inspired',
-            'cyberpunk',
-            'experimental'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "personal_homepage",
+                type: "General"
+            },
+            {
+                name: "fansite",
+                type: "General"
+            },
+            {
+                name: "serial_experiments_lain",
+                type: "General"
+            },
+            {
+                name: "autoplay_audio",
+                type: "General"
+            },
+            {
+                name: "webgl",
+                type: "Web Development Tech"
+            },
+            {
+                name: "anime_inspired",
+                type: "General"
+            },
+            {
+                name: "cyberpunk",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -141,9 +329,18 @@ export const previews: PreviewDatum[] = [
         url: "https://www.girlsgogames.com",
         title: "Girls games - Play free online games for girls at girlsgogames.com",
         tags: [
-            'updated_2026',
-            'browser_games',
-            'game_database'
+            {
+                name: "updated_2026",
+                type: "General"
+            },
+            {
+                name: "browser_games",
+                type: "General"
+            },
+            {
+                name: "game_database",
+                type: "General"
+            }
         ]
     },
     {
@@ -152,18 +349,54 @@ export const previews: PreviewDatum[] = [
         url: "https://lain.angelic-trust.net/wired.html",
         title: "LAIN - SERIAL EXPERIMENT - OMNIPRESENCE",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'retro',
-            'frameset_site',
-            'gif_graphics',
-            'fansite',
-            'serial_experiments_lain',
-            'anime_inspired',
-            'cyberpunk',
-            'abandoned',
-            'experimental',
-            'php'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "frameset_site",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "fansite",
+                type: "General"
+            },
+            {
+                name: "serial_experiments_lain",
+                type: "General"
+            },
+            {
+                name: "anime_inspired",
+                type: "General"
+            },
+            {
+                name: "cyberpunk",
+                type: "General"
+            },
+            {
+                name: "abandoned",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            },
+            {
+                name: "php",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -172,12 +405,30 @@ export const previews: PreviewDatum[] = [
         url: "https://www.mercurialworld.com",
         title: "Home | Mercurial World",
         tags: [
-            'fake_ads',
-            'retro',
-            'music_artist',
-            'gif_graphics',
-            'autoplay_audio',
-            'experimental'
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "music_artist",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "autoplay_audio",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -186,12 +437,30 @@ export const previews: PreviewDatum[] = [
         url: "https://psxdatacenter.com",
         title: "The Playstation Datacenter - PS1, PS2 & PSP games database with covers, cheats, screens, etc.",
         tags: [
-            'frameset_site',
-            'retro',
-            'retro_gaming',
-            'game_database',
-            'updated_2025',
-            'archive'
+            {
+                name: "frameset_site",
+                type: "General"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "retro_gaming",
+                type: "General"
+            },
+            {
+                name: "game_database",
+                type: "General"
+            },
+            {
+                name: "updated_2025",
+                type: "General"
+            },
+            {
+                name: "archive",
+                type: "General"
+            }
         ]
     },
     {
@@ -200,11 +469,26 @@ export const previews: PreviewDatum[] = [
         url: "https://espy.world",
         title: "▷ ESPY.WORLD ◁",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'personal_homepage',
-            'gif_graphics',
-            'vanilla'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "personal_homepage",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -213,9 +497,18 @@ export const previews: PreviewDatum[] = [
         url: "https://activetheory.net",
         title: "Active Theory - Creative Digital Experiences",
         tags: [
-            'no_ads',
-            'webgl',
-            'experimental'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "webgl",
+                type: "Web Development Tech"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -224,11 +517,26 @@ export const previews: PreviewDatum[] = [
         url: "https://corru.observer",
         title: "corru.observer",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'gif_graphics',
-            'pixel_art',
-            'vanilla'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "pixel_art",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -237,14 +545,38 @@ export const previews: PreviewDatum[] = [
         url: "https://classic.systemspace.network",
         title: "TSUKI",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'gif_graphics',
-            'vanilla',
-            'cyberpunk',
-            'anime_inspired',
-            'serial_experiments_lain',
-            'archived'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "cyberpunk",
+                type: "General"
+            },
+            {
+                name: "anime_inspired",
+                type: "General"
+            },
+            {
+                name: "serial_experiments_lain",
+                type: "General"
+            },
+            {
+                name: "archived",
+                type: "General"
+            }
         ]
     },
     {
@@ -253,9 +585,18 @@ export const previews: PreviewDatum[] = [
         url: "https://eieio.games",
         title: "eieio.games",
         tags: [
-            'no_ads',
-            'browser_games',
-            'nextjs'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "browser_games",
+                type: "General"
+            },
+            {
+                name: "nextjs",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -264,10 +605,22 @@ export const previews: PreviewDatum[] = [
         url: "https://neocities.org",
         title: "Neocities: Create your own free website!",
         tags: [
-            'no_ads',
-            'link_hub',
-            'user_generated_content',
-            'community'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "link_hub",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            }
         ]
     },
     {
@@ -276,10 +629,22 @@ export const previews: PreviewDatum[] = [
         url: "https://nekoweb.org",
         title: "nekoweb",
         tags: [
-            'no_ads',
-            'link_hub',
-            'user_generated_content',
-            'community'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "link_hub",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            }
         ]
     },
     {
@@ -288,10 +653,22 @@ export const previews: PreviewDatum[] = [
         url: "https://www.tubcat.com",
         title: "THE WWW FAN WEB PAGE FOR TUBCAT THE FATTEST KITTY EVA :D!!!!!!!!!!!!!!!!!!!!!!",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'abandoned',
-            'the_www_fan_web_page_for_tubcat_the_fattest_kitty_eva!!!!!!!!!!!!!!!!!!!!!!'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "abandoned",
+                type: "General"
+            },
+            {
+                name: "the_www_fan_web_page_for_tubcat_the_fattest_kitty_eva!!!!!!!!!!!!!!!!!!!!!!",
+                type: "General"
+            }
         ]
     },
     {
@@ -300,12 +677,30 @@ export const previews: PreviewDatum[] = [
         url: "https://brisray.com/web/webring-list.htm",
         title: "A Webring List",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'link_hub',
-            'public_service',
-            'archive',
-            'vanilla'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "link_hub",
+                type: "General"
+            },
+            {
+                name: "public_service",
+                type: "General"
+            },
+            {
+                name: "archive",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -314,11 +709,26 @@ export const previews: PreviewDatum[] = [
         url: "https://newgrounds.com",
         title: "Newgrounds.com — Everything, By Everyone",
         tags: [
-            'user_generated_content',
-            'updated_2026',
-            'browser_games',
-            'web_portal',
-            'community'
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "updated_2026",
+                type: "General"
+            },
+            {
+                name: "browser_games",
+                type: "General"
+            },
+            {
+                name: "web_portal",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            }
         ]
     },
     {
@@ -327,11 +737,26 @@ export const previews: PreviewDatum[] = [
         url: "https://web.badges.world",
         title: "web-badges-world",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'retro',
-            'vanilla',
-            'gif_graphics'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            }
         ]
     },
     {
@@ -340,14 +765,38 @@ export const previews: PreviewDatum[] = [
         url: "https://frutigeraeroarchive.org",
         title: "Frutiger Aero Archive",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'retro',
-            'jquery',
-            'browser_games',
-            'donation_link',
-            'links_hub',
-            '88x31_button'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "jquery",
+                type: "Web Development Tech"
+            },
+            {
+                name: "browser_games",
+                type: "General"
+            },
+            {
+                name: "donation_link",
+                type: "General"
+            },
+            {
+                name: "links_hub",
+                type: "General"
+            },
+            {
+                name: "88x31_button",
+                type: "General"
+            }
         ]
     },
     {
@@ -356,10 +805,22 @@ export const previews: PreviewDatum[] = [
         url: "https://www.art.yale.edu",
         title: "Home - Yale School of Art",
         tags: [
-            'no_ads',
-            'user_generated_content',
-            'vanilla',
-            'experimental'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -368,9 +829,18 @@ export const previews: PreviewDatum[] = [
         url: "https://www.arngren.net",
         title: "ATV, drone, elbil, elsykkel, rc helikopter, ATV, robot, elatv",
         tags: [
-            'retro',
-            'experimental',
-            'storefront'
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            },
+            {
+                name: "storefront",
+                type: "General"
+            }
         ]
     },
     {
@@ -379,10 +849,22 @@ export const previews: PreviewDatum[] = [
         url: "https://www.angels-heaven.org/english/default_en.htm",
         title: "EN - TALKS WITH TEACHINGS FROM MY COSMIC FRIENDS - universe-people.org",
         tags: [
-            'retro',
-            'gif_graphics',
-            'frameset_site',
-            'experimental'
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "frameset_site",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            }
         ]
     },
     {
@@ -391,9 +873,18 @@ export const previews: PreviewDatum[] = [
         url: "https://cheapycore.com",
         title: "CHEAPCORE",
         tags: [
-            'noncommercial',
-            'fake_ads',
-            'astro_web_framework'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "astro_web_framework",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -402,8 +893,14 @@ export const previews: PreviewDatum[] = [
         url: "https://webamp.org",
         title: "Webamp · Winamp 2 in your browser",
         tags: [
-            'no_ads',
-            'retro'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            }
         ]
     },
     {
@@ -412,12 +909,30 @@ export const previews: PreviewDatum[] = [
         url: "https://modarchive.org",
         title: "The Mod Archive v4.0b - A distinctive collection of modules",
         tags: [
-            'no_ads',
-            'donation_link',
-            'retro',
-            'community',
-            'user_generated_content',
-            'vanilla'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "donation_link",
+                type: "General"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -426,9 +941,18 @@ export const previews: PreviewDatum[] = [
         url: "https://trace.moe",
         title: "Anime Scene Search Engine - trace.moe",
         tags: [
-            'search_engine',
-            'donation_link',
-            'nextjs'
+            {
+                name: "search_engine",
+                type: "General"
+            },
+            {
+                name: "donation_link",
+                type: "General"
+            },
+            {
+                name: "nextjs",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -437,10 +961,22 @@ export const previews: PreviewDatum[] = [
         url: "https://bryantcodes.art",
         title: "bryantcodes.art",
         tags: [
-            'no_ads',
-            'personal_homepage',
-            'experimental',
-            'nextjs'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "personal_homepage",
+                type: "General"
+            },
+            {
+                name: "experimental",
+                type: "General"
+            },
+            {
+                name: "nextjs",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -449,13 +985,34 @@ export const previews: PreviewDatum[] = [
         url: "https://www.oldavista.com",
         title: "Old'aVista: Home",
         tags: [
-            'retro',
-            'noncommercial',
-            'fake_ads',
-            'search_engine',
-            'link_hub',
-            'pure_vanilla',
-            'minimal_javascript'
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "search_engine",
+                type: "General"
+            },
+            {
+                name: "link_hub",
+                type: "General"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            },
+            {
+                name: "minimal_javascript",
+                type: "General"
+            }
         ]
     },
     {
@@ -464,8 +1021,14 @@ export const previews: PreviewDatum[] = [
         url: "https://vapor95.com",
         title: "Vapor95.com | Vaporwave & Aesthetic Clothing",
         tags: [
-            'storefront',
-            'shopify'
+            {
+                name: "storefront",
+                type: "General"
+            },
+            {
+                name: "shopify",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -474,11 +1037,26 @@ export const previews: PreviewDatum[] = [
         url: "https://oldschool.runescape.com",
         title: "Old School RuneScape - Play Old School RS",
         tags: [
-            'no_ads',
-            'retro',
-            'athena_web_framework',
-            'community',
-            'retro_gaming'
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "athena_web_framework",
+                type: "Web Development Tech"
+            },
+            {
+                name: "community",
+                type: "General"
+            },
+            {
+                name: "retro_gaming",
+                type: "General"
+            }
         ]
     },
     {
@@ -487,8 +1065,14 @@ export const previews: PreviewDatum[] = [
         url: "https://onlinesequencer.net",
         title: "Online Sequencer",
         tags: [
-            'user_generated_content',
-            'jquery'
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "jquery",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -497,8 +1081,14 @@ export const previews: PreviewDatum[] = [
         url: "https://safebooru.donmai.us",
         title: "Danbooru: Anime Image Board",
         tags: [
-            'anime_inspired',
-            'user_generated_content'
+            {
+                name: "anime_inspired",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            }
         ]
     },
     {
@@ -507,13 +1097,34 @@ export const previews: PreviewDatum[] = [
         url: "https://crxw.net",
         title: "crxw's special place",
         tags: [
-            'personal_homepage',
-            'music_artist',
-            'anime_inspired',
-            'gif_graphics',
-            'retro',
-            'fake_ads',
-            'vanilla'
+            {
+                name: "personal_homepage",
+                type: "General"
+            },
+            {
+                name: "music_artist",
+                type: "General"
+            },
+            {
+                name: "anime_inspired",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -522,8 +1133,14 @@ export const previews: PreviewDatum[] = [
         url: "https://archive.sudomemo.net",
         title: "Flipnote Archive",
         tags: [
-            'archive',
-            'donation_link'
+            {
+                name: "archive",
+                type: "General"
+            },
+            {
+                name: "donation_link",
+                type: "General"
+            }
         ]
     },
     {
@@ -532,9 +1149,18 @@ export const previews: PreviewDatum[] = [
         url: "https://cnvmp3.com",
         title: "Youtube to MP3 Converter (Ad-free)",
         tags: [
-            'noncommercial',
-            'no_ads',
-            'donation_link'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "donation_link",
+                type: "General"
+            }
         ]
     },
     {
@@ -543,16 +1169,46 @@ export const previews: PreviewDatum[] = [
         url: "https://forum.agoraroad.com",
         title: "Agora Road's Macintosh Cafe",
         tags: [
-            'noncommercial',
-            'fake_ads',
-            'retro',
-            'gif_graphics',
-            'community',
-            'user_generated_content',
-            'updated_2026',
-            'web_forum',
-            'indie_web',
-            'php'
+            {
+                name: "noncommercial",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "fake_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "retro",
+                type: "General"
+            },
+            {
+                name: "gif_graphics",
+                type: "General"
+            },
+            {
+                name: "community",
+                type: "General"
+            },
+            {
+                name: "user_generated_content",
+                type: "General"
+            },
+            {
+                name: "updated_2026",
+                type: "General"
+            },
+            {
+                name: "web_forum",
+                type: "General"
+            },
+            {
+                name: "indie_web",
+                type: "General"
+            },
+            {
+                name: "php",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -561,9 +1217,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -572,9 +1237,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -583,9 +1257,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -594,9 +1277,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -605,9 +1297,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -616,9 +1317,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -627,9 +1337,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -638,9 +1357,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -649,9 +1377,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -660,9 +1397,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -671,9 +1417,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -682,9 +1437,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -693,9 +1457,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -704,9 +1477,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -715,9 +1497,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -726,9 +1517,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -737,9 +1537,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -748,9 +1557,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -759,9 +1577,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -770,9 +1597,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -781,9 +1617,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -792,9 +1637,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     },
     {
@@ -803,9 +1657,18 @@ export const previews: PreviewDatum[] = [
         url: "https://example.com",
         title: "Example Domain",
         tags: [
-            'nonprofit',
-            'no_ads',
-            'pure_vanilla'
+            {
+                name: "nonprofit",
+                type: "General"
+            },
+            {
+                name: "no_ads",
+                type: "Ads / Commercial Status"
+            },
+            {
+                name: "pure_vanilla",
+                type: "Web Development Tech"
+            }
         ]
     }
 ];
@@ -845,6 +1708,7 @@ for (const preview of previews) {
     );
 }
 
+// ytoo links to & from melonland, and it links to neocities & nekoweb
 postData.get(2)?.linkedTo.push(previews[6]);
 postData.get(2)?.linkedTo.push(previews[17]);
 postData.get(2)?.linkedTo.push(previews[18]);
