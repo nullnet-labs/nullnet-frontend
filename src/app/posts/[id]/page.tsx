@@ -60,7 +60,7 @@ export default async function PostPage(props:PostPageProps) {
                                                 */
                                                 Array.from(tags).map(tag => (
                                                     <li key={tag}>
-                                                        {tag.replace(/_/g, ' ')} <span style={{color: 'var(--primary-accent-dim)'}}>[num]</span>
+                                                        <a href={`/posts?q=${tag}`}>{tag.replace(/_/g, ' ')}</a> <span style={{color: 'var(--primary-accent-dim)'}}>[num]</span>
                                                     </li>
                                                 ))
                                             }
