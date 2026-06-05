@@ -4,7 +4,7 @@ import Repeat from '@/components/repeat';
 export default function HeroSection() {
     return (
         <>
-            <a href="/about" className={'absolute px-3 py-1 hover-btn m-2 dim-accent-bordered-btn'}>
+            <a href="/about" className={'absolute px-3 py-1 hover-invert m-2 dim-accent-bordered-btn'}>
                 <div>
                     What is this?
                 </div>
@@ -12,7 +12,7 @@ export default function HeroSection() {
 
             <section className="text-center pt-12 md:pt-4 mb-4" style={{textShadow: '0 0 16px var(--primary-accent)'}}>
                 <h1 className="text-5xl">
-                    Project Nullnet
+                    The Null Network
                 </h1>
                 <h3 className="text-sm my-3 italic">
                     "Where did the rest of the Internet go?"

@@ -6,8 +6,8 @@ import SiteFooter from "@/components/site-footer";
 
 export const metadata: Metadata = {
     title: {
-        template: '%s | Project Nullnet',
-        default: 'Project Nullnet'
+        template: '%s | The Null Network',
+        default: 'The Null Network'
     },
     icons: {
         icon: '/nullnet-icon.png'
