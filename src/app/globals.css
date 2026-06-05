@@ -31,15 +31,23 @@ body {
     background-color: var(--primary-accent-dim);
 }
 
-/* HOVER BUTTON */
-.hover-btn {
+/* HOVER BUTTON EFFECTS */
+.hover-invert {
     background-color: var(--bg-color);
     transition-duration: 0.2s;
 }
 
-.hover-btn:hover {
+.hover-invert:hover {
     color: var(--bg-color);
     background-color: var(--primary-accent);
+}
+
+.hover-glow {
+    transition: 200ms;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 12px var(--primary-accent);
 }
 
 /* EMPHASIZED BUTTON */
@@ -60,13 +68,4 @@ body {
 .dim-accent-bordered-btn > * {
     position: relative; 
     top: 50%;
-}
-
-/* MISC */
-.hover-glow {
-    transition: 200ms;
-}
-
-.hover-glow:hover {
-    box-shadow: 0 0 12px var(--primary-accent);
 }

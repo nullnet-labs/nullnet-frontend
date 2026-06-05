@@ -1,0 +1,20 @@
+@reference "../../app/globals.css";
+
+.sub-nav {
+    @apply px-4;
+
+    border-color: var(--primary-accent-dim);
+}
+
+.sub-nav > a {
+    @apply relative inline-block px-5 py-3;
+}
+
+.sub-nav > a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 50%;
+    width: 1px;
+    background-color: var(--primary-accent-dim);
+}

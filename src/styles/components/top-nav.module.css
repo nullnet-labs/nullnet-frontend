@@ -5,17 +5,17 @@
 }
 
 .nav-link {
-    @apply relative inline-block py-3;
+    @apply relative inline-block pb-2 pt-3;
 
     clip-path: polygon(0 0, 100% 0, calc(100% - var(--spacing) * 4) 100%, 0 100%);
 }
 
 .nav-link:last-child {
-    @apply text-2xl pl-3 pr-8;
+    @apply text-2xl pl-2 pr-6;
 }
 
 .nav-link:not(:last-child) {
-    @apply text-lg pl-14 pr-10;
+    @apply text-base pl-11 pr-7;
 
     margin-left: calc(var(--spacing, .25rem) * -9);
 }
