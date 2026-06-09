@@ -3,6 +3,7 @@ import "./globals.css";
 
 import TopNav from "@/components/top-nav";
 import SiteFooter from "@/components/site-footer";
+import SubNav from "@/components/sub-nav";
 
 export const metadata: Metadata = {
     title: {
@@ -23,6 +24,7 @@ export default function RootLayout({children}:Readonly<{children: React.ReactNod
         >
             <body>
                 <TopNav />
+                <SubNav />
                 {children}
                 <SiteFooter />
             </body>
