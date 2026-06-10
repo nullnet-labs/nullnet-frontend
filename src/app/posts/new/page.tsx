@@ -18,9 +18,9 @@ export default function NewPostPage() {
                     Guidelines:
                 </h3>
 
-                <ul className="list-disc">
+                <ul className="list-disc mb-4">
                     <li>
-                        At the moment, we only allow one post per <a href="https://en.wikipedia.org/wiki/Fully_qualified_domain_name" target="_blank" className="underline">fully-qualified website domain</a>
+                        At the moment, we only allow one post per fully-qualified website domain
                         <ul className="list-disc list-inside">
                             <li>
                                 For example:
@@ -55,7 +55,11 @@ export default function NewPostPage() {
                     </li>
                 </ul>
 
-                
+                <form>
+                    Web page URL:
+                    <br />
+                    <input type="text" name="url" className="accent-bordered-btn" />
+                </form>
             </main>
         </>
     );
