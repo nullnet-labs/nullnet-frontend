@@ -11,12 +11,12 @@ export default function AboutPage() {
             <main className="mt-12 text-center">
 
                 <h1 className="text-5xl font-semibold mt-12 mb-12">
-                    About Project Nullnet
+                    About The Null Network
                 </h1>
 
                 <article className={classes('text-left text-base w-[50dvw] m-auto', styles['about-article'])}>
                     <p>
-                        Project Nullnet is an online Web-page discovery platform,
+                        The Null Network is an online Web-page discovery platform,
                         to find the parts of the Internet that have become
                         difficult to find.
                     </p>
@@ -37,8 +37,8 @@ export default function AboutPage() {
                         alternative search engines, and even communities centered 
                         around sharing & creating alternative spaces on the Web.
                         These platforms are & were inspirations for creating
-                        Project Nullnet, and they're held with high regard by its
-                        creator. However, Project Nullnet may be the first
+                        The Null Network, and they're held with high regard by its
+                        creator. However, The Null Network may be the first
                         platform that's specifically purpose-built for providing
                         discoverability for off-platform content, all using
                         discovery tools that are driven by the general userbase
@@ -46,7 +46,7 @@ export default function AboutPage() {
                     </p>
 
                     <p>
-                        Project Nullnet will use a community-driven tagging &
+                        The Null Network will use a community-driven tagging &
                         onsite search system that's most familiarly native to
                         Booru sites, re-purposed, re-written, and extended for Web 
                         spaces rather than images. This allows for a powerful
@@ -58,7 +58,7 @@ export default function AboutPage() {
 
                     <p>
                         Nullnet is still under development by its sole creator,
-                        Nicolas Hernandez. Updated May 14th, 2026.
+                        Nicolas Hernandez. Updated June 15th, 2026.
                     </p>
                 </article>
 
